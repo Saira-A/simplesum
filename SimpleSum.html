@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simple Sum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+.w3-bar-item {
+  padding: 1px 2px; 
+}
+/* Changing bar color to white */
+.w3-top .w3-bar {
+  background-color: white;
+  color: black; /* Adjust text color */
+}
+/* Hover styles for bar items */
+.w3-top .w3-bar a:hover {
+  background-color: black; /* Change the background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">
+      <img src="Images/simple_sum.svg" alt="Logo" style="height: 40px; width: auto;">
+    </a>
+    <a href="#overview" class="w3-bar-item w3-button w3-padding-large">OVERVIEW</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
+    <a href="#services" class="w3-bar-item w3-button w3-padding-large">OUR SERVICES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+   
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">
+        <img src="Images/simple_sum.svg" alt="Logo" style="height: 40px; width: auto;">
+    </a>
+    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+                
+     </a>
+    <a href="#overview" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OVERVIEW</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OUR SERVICES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Automatic Slideshow Images -->
+<!-- Slide 1 -->
+<div class="mySlides w3-display-container">
+    <img src="Images/image1.webp" style="width:100%; max-height: 400px;">
+    <div class="w3-display-right w3-container" style="text-align: right;">
+        <div style="background-color: #fff; padding: 5px; margin-bottom: 5px;">
+            <h2 style="color: #162347; margin: 0; font-size: 28px; white-space: nowrap;">Accounting, Bookkeeping and Taxation Services</h2>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+            <div style="background-color: #bcd4e6; padding: 5px; margin-bottom: 5px; width: 400px;">
+                <p style="color: #162347; margin: 0; font-size: 18px; text-align: right;">SIMPLE SUM IN LONDON </p>
+            </div>
+            <a href="#contact" style="text-decoration: none;">
+                <div style="background-color: #bcd4e6; padding: 5px; width: 200px; text-align: center;">
+                    <p style="color: #162347; margin: 0; font-size: 18px;">Contact us</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="mySlides w3-display-container">
+    <img src="Images/image 2.webp" style="width:100%; max-height: 400px;">
+    <div class="w3-display-right w3-container" style="text-align: right;">
+        <div style="background-color: #fff; padding: 5px; margin-bottom: 5px;">
+            <h2 style="color: #162347; margin: 0; font-size: 28px; white-space: nowrap;">Accounting, Bookkeeping and Taxation Services</h2>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+            <div style="background-color: #bcd4e6; padding: 5px; margin-bottom: 5px; width: 400px;">
+                <p style="color: #162347; margin: 0; font-size: 18px; text-align: right;">SIMPLE SUM IN LONDON </p>
+            </div>
+            <a href="#contact" style="text-decoration: none;">
+                <div style="background-color: #bcd4e6; padding: 5px; width: 200px; text-align: center;">
+                    <p style="color: #162347; margin: 0; font-size: 18px;">Contact us</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="mySlides w3-display-container">
+    <img src="Images/image 3.webp" style="width:100%; max-height: 400px;">
+    <div class="w3-display-right w3-container" style="text-align: right;">
+        <div style="background-color: #fff; padding: 5px; margin-bottom: 5px;">
+            <h2 style="color: #162347; margin: 0; font-size: 28px; white-space: nowrap;">Accounting, Bookkeeping and Taxation Services</h2>
+        </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                <div style="background-color: #bcd4e6; padding: 5px; margin-bottom: 5px; width: 400px;">
+                    <p style="color: #162347; margin: 0; font-size: 18px; text-align: right;">SIMPLE SUM IN LONDON </p>
+                </div>
+                <a href="#contact" style="text-decoration: none;">
+                    <div style="background-color: #bcd4e6; padding: 5px; width: 200px; text-align: center;">
+                        <p style="color: #162347; margin: 0; font-size: 18px;">Contact us</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  
+  
+  
+
+  <!-- Overview Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="overview">
+    <h2 class="w3-wide">Bookkeeping and Accountancy in London</h2>
+    <p class="w3-opacity"><i>EFFICIENTLY MAINTAINING YOUR FINANCIAL RECORDS</i></p>
+    <p class="w3-justify">Whether you're working as self-employed, a sole trader or trading on private or public limited company basis, Bookkeeping and Accounting is the most important part of any size or type of business. With managing your business on a daily basis, comes many challenges which can take all your efforts, energy, dedication and commitment to meet.<br>
+        
+       <p> Keeping your financial records up to date while you’re facing those challenges, can be very stressful and take up time when you should be running your business effciently and profitably, to make progress for the future. </p>
+        
+       <p> Well, to avoid these issues, we are here to help you as certified bookkeepers. We'll take over your stress and anxiety, making all paperwork disappear, substituted with orderly, well presented records for you and others. VAT returns can be done with ease, all invoices managed and monthly or quarterly figures can be presented as you require.</p>
+       <div class="w3-row w3-padding-32">
+        <div class="w3-quarter">
+            <div class="w3-container w3-border w3-padding-16 w3-light-grey">
+                <!-- Icon -->
+                <img src="Images/book-solid.svg" alt="Book icon" style="width: 60px; height: 60px;">
+                <!-- Text -->
+                <p style="margin-bottom: 0;">BOOKKEEPING</p>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-border w3-padding-16 w3-light-grey">
+                <!-- Icon -->
+                <img src="Images/calculator-solid.svg" alt="Calculator icon" style="width: 60px; height: 60px;">
+                <!-- Text -->
+                <p style="margin-bottom: 0;">ACCOUNTANCY</p>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-border w3-padding-16 w3-light-grey">
+                <!-- Icon -->
+                <img src="Images/clipboard-solid.svg" alt="Clipboard icon" style="width: 60px; height: 60px;">
+                <!-- Text -->
+                <p style="margin-bottom: 0;">BUDGETING</p>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-border w3-padding-16 w3-light-grey">
+                <!-- Icon -->
+                <img src="Images/percent-solid.svg" alt="Percentage icon" style="width: 60px; height: 60px;">
+                <!-- Text -->
+                <p style="margin-bottom: 0;">VAT RETURN</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+<!-- About Us Section -->
+<div class="w3-container w3-padding-64 w3-light-grey" id="about" style="width: 100vw; display: flex;">
+    <div style="flex: 1;">
+        <h2 class="w3-wide">About Us</h2>
+        <p class="w3-opacity"><i>LONDON CERTIFIED BOOKKEEPERS</i></p>
+        <p>Simple Sum is a local certified bookkeepers and based in the West London area. We offer the most reliable, flexible and professional services for Accounting, Bookkeeping and Taxation Services to all small to medium size of businesses.</p>
+        <p>Simple Sum is a member of the ICB (Institute of Certified Bookkeepers) and AAT (Association of Accounting Technician) and has been running since April 2012. We are associated with the chartered Accounting Firms where chartered level work is shared with Chartered Accountants.</p>
+        <p>Simple Sum take care of their clients with care and commitment where services are offered with knowledge and the best advice. We welcome the opportunity to discuss all your needs and devise a solution for your requirements face to face with an on-site consultation at no extra cost. </p>
+        <p>Explore more about our services below, and please contact us by filling out our contact form at the bottom of the page.</p>
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+        <img src="Images/Advanced+Certification+logo+(1)-1280w.webp" style="width: 200px; margin-bottom: 20px;">
+        <img src="Images/xero-certified-advisor-logo-hires-RGB-e1541376639280.png" style="width: 200px; height: 100px; margin-bottom: 20px;">
+    </div>
+</div>
+
+<!-- Our Services Section -->
+<div class="w3-container w3-padding-64" id="services" style="background-color: white;">
+    <h2 class="w3-wide">Our Services</h2>
+    <p>Bookkeeping and Accounts vary from business to business, and personal service is always very important. You will always receive a free, no-obligation and in person, face-to-face consultation before taking over your books and coming on board.</p>
+    
+    <p>We offer a number of services as below:</p>
+    <ul>
+        <li>Bookkeeping to trial balance</li>
+        <li>Management accounting</li>
+        <li>Cash flow forecasts</li>
+        <li>Payroll, employee records, plus year-end submission</li>
+        <li>Computerised accountancy systems</li>
+        <li>Personal taxation</li>
+        <li>Costing and budgeting</li>
+        <li>Preparation of final accounts for partnerships</li>
+        <li>Preparation of final accounts for sole traders</li>
+        <li>Draft final accounts for Ltd companies</li>
+        <li>Self-assessment tax</li>
+        <li>Submission of business tax returns</li>
+        <li>Maintaining fixed asset register</li>
+        <li>VAT returns</li>
+    </ul>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64 w3-light-grey" id="contact" style="text-align: center;">
+    <h2 class="w3-wide">Send Us Your Enquiry</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Name" style="width: 20%; margin: 0 5px;" required>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Business Name" style="width: 20%; margin: 0 5px;" required>
+            <input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="Email" style="width: 20%; margin: 0 5px;" required>
+            <input class="w3-input w3-border w3-margin-bottom" type="tel" placeholder="Phone" style="width: 20%; margin: 0 5px;" pattern="[0-9]{8,12}" title="Please enter a valid phone number" required>
+            <textarea class="w3-input w3-border" placeholder="Message" style="width: 83%; height: 200px; margin: 0 5%;" required></textarea>
+            <button type="submit" style="background-color: #162347; color: white; padding: 10px 20px; border: none; cursor: pointer; transition: background-color 0.3s ease; margin-top: 10px; margin-left: 5%; align-self: flex-start;">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+  
+<!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-opacity w3-light-grey" style="text-align: left;">
+    <div class="w3-row-padding">
+      <div class="w3-twothird">
+        <h4 style="font-weight: bold; color: #333;">Get In Touch</h4>
+        <p style="font-size: 14px;"><i class="fa fa-envelope"></i> Email: <a href="mailto:info@simplesum.co.uk">info@simplesum.co.uk</a></p>
+        <p style="font-size: 14px;"><i class="fa fa-phone"></i> Phone: 07922 593648</p>
+        <p style="font-size: 14px;"><i class="fa fa-map-marker"></i> London and surrounding areas</p>
+        <p style="font-size: 14px;"><i class="fa fa-clock-o"></i> Mon - Fri: 9AM - 5PM</p>
+      </div>
+      <div class="w3-third w3-padding" style="text-align: right;">
+        <img src="Images/simple_sum.svg" alt="Logo" style="max-height: 100px; width: auto;">
+      </div>
+    </div>
+
+  </footer>
+  
+  
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleNavbar() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") === -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
