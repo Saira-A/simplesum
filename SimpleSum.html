@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Simple Sum</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,59 +11,39 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
-.w3-bar-item {
-  padding: 1px 2px; 
-}
-/* Changing bar color to white */
-.w3-top .w3-bar {
-  background-color: white;
-  color: black; /* Adjust text color */
-}
-/* Hover styles for bar items */
-.w3-top .w3-bar a:hover {
-  background-color: black; /* Change the background color on hover */
-  color: white; /* Change text color on hover */
-}
-
 
 
 </style>
 </head>
 <body>
+
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-card">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">
-      <img src="Images/simple_sum.svg" alt="Logo" style="height: 40px; width: auto;">
-    </a>
-    <a href="#overview" class="w3-bar-item w3-button w3-padding-large">OVERVIEW</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
-    <a href="#services" class="w3-bar-item w3-button w3-padding-large">OUR SERVICES</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-   
+    <div class="w3-bar w3-white w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-padding-large">
+        <img src="Images/simple_sum.svg" alt="Website Logo" style="height: 40px; width: auto;">
+      </a>
+      <a href="#overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OVERVIEW</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+      <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUR SERVICES</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
   </div>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">
-        <img src="Images/simple_sum.svg" alt="Logo" style="height: 40px; width: auto;">
-    </a>
-    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" onclick="toggleNavbar()">
-        <i class="fa fa-bars"></i>
-                
-     </a>
+  
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
     <a href="#overview" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OVERVIEW</a>
     <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
     <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OUR SERVICES</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-</div>
+  </div>
 
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-<!-- Automatic Slideshow Images -->
+ <!-- Automatic Slideshow Images -->
 <!-- Slide 1 -->
 <div class="mySlides w3-display-container">
     <img src="Images/image1.webp" style="width:100%; max-height: 400px;">
@@ -124,12 +104,9 @@ body {font-family: "Lato", sans-serif}
         </div>
     </div>
 
-  
-  
-  
 
-  <!-- Overview Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="overview">
+<!-- Overview Section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="overview">
     <h2 class="w3-wide">Bookkeeping and Accountancy in London</h2>
     <p class="w3-opacity"><i>EFFICIENTLY MAINTAINING YOUR FINANCIAL RECORDS</i></p>
     <p class="w3-justify">Whether you're working as self-employed, a sole trader or trading on private or public limited company basis, Bookkeeping and Accounting is the most important part of any size or type of business. With managing your business on a daily basis, comes many challenges which can take all your efforts, energy, dedication and commitment to meet.<br>
@@ -228,16 +205,10 @@ body {font-family: "Lato", sans-serif}
     </form>
 </div>
 
-
-
-
-
-
+ 
   
 <!-- End Page Content -->
 </div>
-
-
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-opacity w3-light-grey" style="text-align: left;">
@@ -275,15 +246,14 @@ function carousel() {
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function toggleNavbar() {
+function myFunction() {
   var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") === -1) {
+  if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else {
+  } else { 
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
 
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
