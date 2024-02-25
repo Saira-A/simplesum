@@ -30,7 +30,7 @@ body {font-family: "Lato", sans-serif}
       <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     </div>
   </div>
-  
+
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:73px">
     <a href="#overview" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OVERVIEW</a>
@@ -110,9 +110,9 @@ body {font-family: "Lato", sans-serif}
     <h2 class="w3-wide">Bookkeeping and Accountancy in London</h2>
     <p class="w3-opacity"><i>EFFICIENTLY MAINTAINING YOUR FINANCIAL RECORDS</i></p>
     <p class="w3-justify">Whether you're working as self-employed, a sole trader or trading on private or public limited company basis, Bookkeeping and Accounting is the most important part of any size or type of business. With managing your business on a daily basis, comes many challenges which can take all your efforts, energy, dedication and commitment to meet.<br>
-        
+
        <p> Keeping your financial records up to date while you’re facing those challenges, can be very stressful and take up time when you should be running your business effciently and profitably, to make progress for the future. </p>
-        
+
        <p> Well, to avoid these issues, we are here to help you as certified bookkeepers. We'll take over your stress and anxiety, making all paperwork disappear, substituted with orderly, well presented records for you and others. VAT returns can be done with ease, all invoices managed and monthly or quarterly figures can be presented as you require.</p>
        <div class="w3-row w3-padding-32">
         <div class="w3-quarter">
@@ -150,7 +150,7 @@ body {font-family: "Lato", sans-serif}
     </div>
 </div>
 
- 
+
 <!-- About Us Section -->
 <div class="w3-container w3-padding-64 w3-light-grey" id="about" style="width: 100vw; display: flex; flex-direction: column; align-items: center;">
     <div style="flex: 1; width: 100%; max-width: 800px; text-align: center;">
@@ -164,7 +164,7 @@ body {font-family: "Lato", sans-serif}
     <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
         <img src="Images/xero-certified-advisor-logo-hires-RGB-e1541376639280.png" style="width: 200px; height: 100px; margin-bottom: 20px;">
         <img src="Images/Advanced+Certification+logo+(1)-1280w.webp" style="width: 200px; margin-bottom: 20px;">
-        
+
     </div>
 </div>
 
@@ -174,7 +174,7 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-container w3-padding-64" id="services" style="background-color: white;">
     <h2 class="w3-wide">Our Services</h2>
     <p>Bookkeeping and Accounts vary from business to business, and personal service is always very important. You will always receive a free, no-obligation and in person, face-to-face consultation before taking over your books and coming on board.</p>
-    
+
     <p>We offer a number of services as below:</p>
     <ul>
         <li>Bookkeeping to trial balance</li>
@@ -197,19 +197,19 @@ body {font-family: "Lato", sans-serif}
 <!-- Contact Section -->
 <div class="w3-container w3-padding-64 w3-light-grey" id="contact" style="text-align: center;">
     <h2 class="w3-wide">Send Us Your Enquiry</h2>
+    <form action="https://formspree.io/f/mzbngewq" method="POST">
         <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Name" style="width: 20%; margin: 0 5px;" required>
-            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Business Name" style="width: 20%; margin: 0 5px;" required>
-            <input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="Email" style="width: 20%; margin: 0 5px;" required>
-            <input class="w3-input w3-border w3-margin-bottom" type="tel" placeholder="Phone" style="width: 20%; margin: 0 5px;" pattern="[0-9]{8,12}" title="Please enter a valid phone number" required>
-            <textarea class="w3-input w3-border" placeholder="Message" style="width: 83%; height: 200px; margin: 0 5%;" required></textarea>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" name="Name" placeholder="Name" style="width: 20%; margin: 0 5px;" required>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" name="Business Name" placeholder="Business Name" style="width: 20%; margin: 0 5px;" required>
+            <input class="w3-input w3-border w3-margin-bottom" type="email" name="_replyto" placeholder="Email" style="width: 20%; margin: 0 5px;" required>
+            <input class="w3-input w3-border w3-margin-bottom" type="tel" name="Phone" placeholder="Phone" style="width: 20%; margin: 0 5px;" pattern="[0-9]{8,12}" title="Please enter a valid phone number" required>
+            <textarea class="w3-input w3-border" name="Message" placeholder="Message" style="width: 83%; height: 200px; margin: 0 5%;" required></textarea>
             <button type="submit" style="background-color: #162347; color: white; padding: 10px 20px; border: none; cursor: pointer; transition: background-color 0.3s ease; margin-top: 10px; margin-left: 5%; align-self: flex-start;">Submit</button>
         </div>
     </form>
 </div>
 
- 
-  
+
 <!-- End Page Content -->
 </div>
 
@@ -229,8 +229,8 @@ body {font-family: "Lato", sans-serif}
     </div>
 
   </footer>
-  
-  
+
+
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
@@ -240,12 +240,12 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -253,7 +253,7 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
